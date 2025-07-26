@@ -1155,3 +1155,177 @@ Because the denominator becomes **tiny**, but stays **positive**, so the whole e
 ---
 
 
+Absolutely! Let's break it down into a **simple table** so you can clearly understand how limits behave when one term tends to **0**, **∞**, or a constant **`c`**.
+
+This table is a **quick summary of limit forms**, explaining which are **determinate**, which are **indeterminate**, and how they behave.
+
+---
+
+### ✅ Table of Common Limit Forms
+
+| Expression              | Behavior as `x → a`      | Result           | Explanation                                             |
+| ----------------------- | ------------------------ | ---------------- | ------------------------------------------------------- |
+| $\frac{c}{\infty}$      | `c` is any constant      | 0                | Constant over very large number tends to 0              |
+| $\frac{\infty}{c}$      | `c ≠ 0`                  | ∞ or −∞          | Large number divided by constant is still large         |
+| $\frac{c}{0^+}$         | 0 from **positive** side | $+\infty$        | Positive small number in denominator grows large        |
+| $\frac{c}{0^-}$         | 0 from **negative** side | $-\infty$        | Negative small number in denominator grows negatively   |
+| $\frac{c}{0}$           | From both sides (±)      | Undefined / ±∞   | Depends on approach side                                |
+| $\frac{0}{\infty}$      | ---                      | 0                | Zero divided by large → 0                               |
+| $\frac{\infty}{0}$      | ---                      | Undefined / ±∞   | Explodes (depends on sign of numerator & approach side) |
+| $\frac{0}{0}$           | Indeterminate form       | Need to simplify | Could be any value — L'Hôpital, factoring, etc.         |
+| $\frac{\infty}{\infty}$ | Indeterminate form       | Need to simplify | Compare rates of growth (dominant term)                 |
+| $\infty - \infty$       | Indeterminate form       | Need to simplify | Could cancel or stay large                              |
+| $0 \cdot \infty$        | Indeterminate form       | Need to simplify | One shrinks, one explodes — depends who wins            |
+| $c \cdot \infty$        | `c > 0`                  | ∞                | Constant times large → large                            |
+| $c^0$, `c ≠ 0`          | ---                      | 1                | Anything nonzero to power 0 is 1                        |
+| $0^0$                   | Indeterminate form       | Need context     | Depends on how both base and exponent behave            |
+| $\infty^0$              | Indeterminate form       | Need context     | Large base, small exponent — unclear                    |
+| $1^\infty$              | Indeterminate form       | Need context     | Could tend to 1, e, or anything                         |
+
+---
+
+### 🔍 Tips to Handle Indeterminate Forms
+
+Whenever you see:
+
+* $\frac{0}{0}$
+* $\frac{\infty}{\infty}$
+* $\infty - \infty$
+* $0 \cdot \infty$
+* $1^\infty$
+* $0^0$
+* $\infty^0$
+
+These are called **indeterminate forms** — meaning the result **is not obvious**.
+
+You must apply:
+
+* **Factoring**
+* **L'Hôpital’s Rule**
+* **Rationalizing**
+* **Taylor expansion (rare for GATE, but used sometimes)**
+
+---
+
+Great question. Let’s go one step further and answer:
+
+> **What are the plausible outcomes (answers) of each indeterminate form?**
+
+We'll cover each **indeterminate form** and list the **possible real answers** you might get depending on the function behavior.
+
+---
+
+### 💥 1. $\frac{0}{0}$ — Indeterminate Form
+
+> **Plausible answers**:
+
+* **Any finite value** (e.g., 2, −5, 1/3)
+* **∞ or −∞**
+* **Does not exist** (depending on left/right limits)
+
+**Example:**
+
+$$
+\lim_{x \to 0} \frac{x}{x} = 1 \quad \text{but} \quad \lim_{x \to 0} \frac{x^2}{x} = 0
+$$
+
+---
+
+### 💥 2. $\frac{\infty}{\infty}$ — Indeterminate Form
+
+> **Plausible answers**:
+
+* 0
+* Any finite constant (like 3, −2)
+* ∞ or −∞
+
+**Example:**
+
+$$
+\lim_{x \to \infty} \frac{x}{x^2} = 0 \quad \text{but} \quad \lim_{x \to \infty} \frac{3x^2 + 1}{x^2} = 3
+$$
+
+---
+
+### 💥 3. $\infty - \infty$ — Indeterminate Form
+
+> **Plausible answers**:
+
+* Any finite number
+* 0
+* ∞ or −∞
+
+**Example:**
+
+$$
+\lim_{x \to \infty} \left( \sqrt{x^2 + x} - x \right) = \frac{1}{2}
+$$
+
+---
+
+### 💥 4. $0 \cdot \infty$ — Indeterminate Form
+
+> **Plausible answers**:
+
+* 0
+* Any finite number
+* ∞
+
+**Example:**
+
+$$
+\lim_{x \to 0^+} x \cdot \ln(x) = 0
+$$
+
+---
+
+### 💥 5. $1^\infty$ — Indeterminate Form
+
+> **Plausible answers**:
+
+* Any positive number
+* 1
+* e (Euler’s number)
+* ∞
+
+**Example:**
+
+$$
+\lim_{x \to \infty} \left(1 + \frac{1}{x} \right)^x = e
+$$
+
+---
+
+### 💥 6. $0^0$ — Indeterminate Form
+
+> **Plausible answers**:
+
+* 1
+* 0
+* Any finite constant
+
+**Example:**
+
+$$
+\lim_{x \to 0^+} x^x = 1
+$$
+
+---
+
+### 💥 7. $\infty^0$ — Indeterminate Form
+
+> **Plausible answers**:
+
+* 1
+* 0
+* ∞
+
+**Example:**
+
+$$
+\lim_{x \to 0^+} \left( \frac{1}{x} \right)^x = 1
+$$
+
+---
+
+G
