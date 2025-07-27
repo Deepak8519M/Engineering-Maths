@@ -1328,4 +1328,177 @@ $$
 
 ---
 
-G
+Great question! You're talking about **piecewise functions** and **limits from both sides** — let's break it down clearly so it makes full sense.
+
+---
+
+## ✳️ Given:
+
+A function $f(x)$ defined as:
+
+$$
+f(x) = 
+\begin{cases} 
+4x + m & \text{if } x < 2 \\
+-6x^2 + 2m & \text{if } x \geq 2 
+\end{cases}
+$$
+
+You asked:
+
+> 1. Can we say the function behaves from two different sides of the limit?
+> 2. Why do we plug in $x = 2$ into **both expressions**, even when one is defined only for $x < 2$?
+
+---
+
+### ✅ Answer to Q1: Do limits behave from two sides?
+
+**Yes!**
+When you're asked about:
+
+$$
+\lim_{x \to 2} f(x)
+$$
+
+You must check **left-hand limit** and **right-hand limit**:
+
+* **Left-hand limit** $\lim_{x \to 2^-} f(x)$: Use the formula for $x < 2$: $4x + m$
+* **Right-hand limit** $\lim_{x \to 2^+} f(x)$: Use the formula for $x \geq 2$: $-6x^2 + 2m$
+
+For the overall limit to **exist**, both must give the same value.
+
+---
+
+### ✅ Answer to Q2: Why do we substitute $x = 2$ in both cases?
+
+Even though $4x + m$ is only defined for $x < 2$, we want to know:
+
+> What value is the function *approaching* as $x \to 2$ from the left?
+
+So we **don’t care if it’s defined at 2** — we plug in 2 **to find the limit** (not to evaluate the function).
+
+✅ Think of it this way:
+We are not checking the *actual value* at $x = 2$, we are checking what it **gets closer to** from both sides.
+
+---
+
+### 📘 Example: Let’s solve it!
+
+Find the value of $m$ such that the limit exists.
+
+We solve:
+
+$$
+\lim_{x \to 2^-} f(x) = \lim_{x \to 2^+} f(x)
+$$
+
+**Left side:**
+
+$$
+\lim_{x \to 2^-} (4x + m) = 4(2) + m = 8 + m
+$$
+
+**Right side:**
+
+$$
+\lim_{x \to 2^+} (-6x^2 + 2m) = -6(2^2) + 2m = -24 + 2m
+$$
+
+Now equate them:
+
+$$
+8 + m = -24 + 2m
+\Rightarrow 8 + m = -24 + 2m
+\Rightarrow 8 + 24 = 2m - m
+\Rightarrow 32 = m
+$$
+
+---
+
+### ✅ Final Answer: $\boxed{m = 32}$
+
+---
+
+That’s actually a **great question** — and you're right on track intuitively!
+
+You're asking:
+
+> Why don’t we plug in 1.999999... instead of exactly 2 into both parts of the function when solving limits?
+
+---
+
+## ✅ Here's the clear explanation:
+
+When solving a **limit**, we **do** mentally approach values like 1.999999 or 2.000001 — but we don’t have to literally plug in those long decimals.
+
+Instead, we use the **expression** that works **for the side we're coming from** — and plug in the **limit value** (like 2) **into that expression**.
+
+Let’s explain with your example:
+
+---
+
+## 🎯 Function:
+
+$$
+f(x) = 
+\begin{cases} 
+4x + m & \text{if } x < 2 \\
+-6x^2 + 2m & \text{if } x \geq 2 
+\end{cases}
+$$
+
+Now, when we write:
+
+$$
+\lim_{x \to 2^-} f(x)
+$$
+
+We’re **approaching 2 from the left**, meaning:
+
+* Values like 1.9, 1.99, 1.999999 etc.
+* So we must use the expression for $x < 2$: `4x + m`
+
+You **could** plug in 1.999999 into $4x + m$, but it would be:
+
+$$
+4(1.999999) + m = \approx 7.999996 + m
+$$
+
+That’s almost $8 + m$.
+So instead of doing this messy decimal approximation, **math lets you directly substitute 2 into the expression**, **just for the sake of limit evaluation**.
+
+---
+
+## 🔑 Why we substitute 2 (even if function isn’t defined there):
+
+Because for **polynomials**, like `4x + m`, limits are continuous — so:
+
+$$
+\lim_{x \to 2^-} (4x + m) = 4 \cdot 2 + m = 8 + m
+$$
+
+This gives you the **exact approaching value** from the left.
+
+Same applies to the right-hand side.
+
+---
+
+## ⚠️ Important:
+
+* **We’re not saying** $f(2) = 4x + m$ (because $f(2)$ is only defined by the second case).
+* We’re only using 2 in the **limit expression** — a math trick to avoid using many decimals like 1.999999 etc.
+
+---
+
+### ✅ In summary:
+
+| What you're doing                                   | What you're allowed to do                                                                         |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| Approaching 2 with values like 1.999... or 2.000... | Yes, that’s what a limit means                                                                    |
+| Plug 2 into both expressions directly               | Only **plug 2 into left-hand expression** for $x \to 2^-$ and into right-hand one for $x \to 2^+$ |
+| Can you plug 1.999999?                              | You can, but math allows direct substitution into the expression instead, for simplicity          |
+
+---
+
+Would you like a quick visual chart that shows how the function behaves on both sides of 2?
+---
