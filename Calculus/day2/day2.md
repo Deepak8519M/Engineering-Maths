@@ -655,5 +655,180 @@ So, **ln(x)** is called the **natural logarithm** because it appears everywhere 
 
 ---
 
+Great question! Let's break it down step by step:
 
+---
 
+### 📍 You're dealing with a limit of the form:
+
+$$
+\lim_{x \to -\infty} \frac{\text{some expression}}{\text{another expression involving } x^2}
+$$
+
+Let’s take an example similar to what you described:
+
+$$
+\lim_{x \to -\infty} \frac{x^2 + 3x + 1}{x^2 - 5x + 2}
+$$
+
+We often **divide numerator and denominator by the highest power** (here it's $x^2$) to simplify.
+
+---
+
+### ✍️ Step-by-step:
+
+We divide **numerator and denominator** by $x^2$:
+
+$$
+= \lim_{x \to -\infty} \frac{1 + \frac{3}{x} + \frac{1}{x^2}}{1 - \frac{5}{x} + \frac{2}{x^2}}
+$$
+
+Now, as $x \to -\infty$, all terms like $\frac{1}{x}$ and $\frac{1}{x^2}$ go to 0:
+
+$$
+= \frac{1 + 0 + 0}{1 - 0 + 0} = \frac{1}{1} = 1
+$$
+
+---
+
+### 💥 But what if instead you *factor out* $x^2$ directly?
+
+Let’s say you do this:
+
+$$
+\frac{x^2(1 + \frac{3}{x} + \frac{1}{x^2})}{x^2(1 - \frac{5}{x} + \frac{2}{x^2})}
+$$
+
+Then $x^2$ cancels:
+
+$$
+= \frac{1 + \frac{3}{x} + \frac{1}{x^2}}{1 - \frac{5}{x} + \frac{2}{x^2}} \to \frac{1}{1}
+$$
+
+Still 1. ✅
+
+---
+
+### ❓ But now your doubt is:
+
+> What if I **take x common instead of x²**, and it's **x → –∞**, why does the sign flip?
+
+Let’s do this with an example:
+
+$$
+\lim_{x \to -\infty} \frac{x + 1}{\sqrt{x^2 + 1}}
+$$
+
+Let’s simplify the denominator:
+
+* Inside the square root: $\sqrt{x^2 + 1} = \sqrt{x^2(1 + \frac{1}{x^2})} = |x|\sqrt{1 + \frac{1}{x^2}}$
+
+Now here's the key:
+
+> ✔️ **$|x| = -x** when \(x < 0$**
+
+So, since $x \to -\infty$, $x$ is **negative**, so:
+
+$$
+|x| = -x
+$$
+
+Therefore:
+
+$$
+\sqrt{x^2 + 1} = -x \cdot \sqrt{1 + \frac{1}{x^2}}
+$$
+
+Now our expression becomes:
+
+$$
+\frac{x + 1}{-x \cdot \sqrt{1 + \frac{1}{x^2}}}
+$$
+
+We divide numerator and denominator by $x$:
+
+$$
+= \frac{1 + \frac{1}{x}}{-1 \cdot \sqrt{1 + \frac{1}{x^2}}}
+\to \frac{1 + 0}{-1 \cdot \sqrt{1 + 0}} = \frac{1}{-1} = -1
+$$
+
+---
+
+### ✅ So Why the Negative?
+
+Because:
+
+* You pulled out **x** from under a square root.
+* $\sqrt{x^2} = |x|$
+* When $x < 0$, $|x| = -x$
+
+So the **sign flips** because you're dealing with negative $x$, and square root always gives a **positive result**, but when simplifying, you **must preserve sign using absolute value**.
+
+---
+
+Great question! Let's break it down step by step in a **very simple** and **visual way** so you can understand why:
+
+---
+
+### 🤔 What is |x| (modulus of x)?
+
+It means **"distance from 0"** on the number line.
+
+So:
+
+* If x is **positive**, then |x| = x
+* If x is **negative**, then |x| = –x
+  (Because distance is always positive)
+
+---
+
+### 🎯 Why is |x| = –x when x is negative?
+
+Let’s try an example:
+
+* Take x = –5
+  → Then |–5| = 5
+  → And –(–5) = +5
+
+So yes:
+**|x| = –x when x is negative**
+
+Why?
+
+Because:
+
+* x = –5 (a negative number)
+* |–5| means: “how far is –5 from 0?” That’s 5
+* But x itself is –5, so to **make it positive**, you must do –x
+  → –(–5) = 5 = |x|
+
+---
+
+### ⚠️ So when solving limit problems like
+
+`x → –∞` and we have `|x|`, then:
+
+* Since x is negative (going to –∞),
+* We replace **|x| = –x**
+
+---
+
+### ✅ Summary Table
+
+\| x Value           | |x| Equals     | Because…               |
+\|------------------|---------------|------------------------|
+\| Positive (x > 0) | x             | Already positive       |
+\| Negative (x < 0) | –x            | Opposite to get +ve    |
+
+---
+
+If you want a fun analogy:
+
+> Imagine modulus as a tape measure.
+> It doesn't care if you walk left or right from 0.
+> It just says “you walked 5 meters away from 0.”
+> So if x = –5, modulus says “yeah, you went 5 away” — and to calculate that, we use –(–5) = 5.
+
+---
+
+G
