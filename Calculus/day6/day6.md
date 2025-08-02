@@ -472,3 +472,212 @@ So, if you walk along:
    ...and add up all those distances — you get the perimeter.
 
 ---
+
+Alright ✅
+I’ll give you **full, detailed e-notes** on **Integration** — structured, easy to read, and covering all important concepts.
+
+---
+
+# **📚 E-Notes on Integration**
+
+---
+
+## **1. Introduction**
+
+* **Integration** is a fundamental concept in calculus.
+* It is the **inverse process of differentiation**.
+* It is used to **find the total** from a given rate of change.
+* In simple terms: **Differentiation** breaks things down, **Integration** adds them up.
+
+---
+
+## **2. Definition**
+
+**Integration** is the process of finding the *integral* of a function, which represents:
+
+* The **area** under a curve.
+* The **accumulated total** of small parts.
+* The **original function** when the derivative is known.
+
+---
+
+## **3. Notation**
+
+$$
+\int f(x) \, dx
+$$
+
+Where:
+
+1. **∫** → Integration symbol, meaning “sum of infinitely small quantities.”
+2. **f(x)** → The function to be integrated.
+3. **dx** → The variable of integration, representing a tiny change in x.
+
+---
+
+## **4. Types of Integration**
+
+### **A. Indefinite Integration**
+
+* No limits (bounds) are given.
+* The result is a general function plus a constant of integration $C$.
+
+$$
+\int f(x) \, dx = F(x) + C
+$$
+
+Example:
+
+$$
+\int 2x \, dx = x^2 + C
+$$
+
+---
+
+### **B. Definite Integration**
+
+* Limits (bounds) are given.
+* Represents the exact area under the curve between two points.
+
+$$
+\int_a^b f(x) \, dx = F(b) - F(a)
+$$
+
+Example:
+
+$$
+\int_0^2 x \, dx = \left[ \frac{x^2}{2} \right]_0^2 = 2
+$$
+
+---
+
+## **5. Geometrical Meaning**
+
+* Integration finds the **area under the curve** of $y = f(x)$ between two points.
+* Think of breaking the area into **infinitely thin rectangles**:
+
+  * Height = $f(x)$
+  * Width = $dx$
+  * Adding them all → Integration.
+
+---
+
+## **6. Physical Meaning**
+
+Integration can calculate:
+
+1. Distance from speed-time graphs.
+2. Work done from force-displacement graphs.
+3. Total quantity from rate of change.
+
+---
+
+## **7. Standard Integrals**
+
+$$
+\int x^n \, dx = \frac{x^{n+1}}{n+1} + C \quad (n \neq -1)
+$$
+
+$$
+\int e^x \, dx = e^x + C
+$$
+
+$$
+\int \frac{1}{x} \, dx = \ln|x| + C
+$$
+
+$$
+\int \sin x \, dx = -\cos x + C
+$$
+
+$$
+\int \cos x \, dx = \sin x + C
+$$
+
+---
+
+## **8. Properties of Integration**
+
+1. **Linearity**:
+
+$$
+\int [af(x) + bg(x)] dx = a\int f(x) dx + b\int g(x) dx
+$$
+
+2. **Constant rule**:
+
+$$
+\int k \, dx = kx + C
+$$
+
+3. **Sum rule**:
+
+$$
+\int (f(x) + g(x)) dx = \int f(x) dx + \int g(x) dx
+$$
+
+---
+
+## **9. Methods of Integration**
+
+1. **Substitution method**
+
+   * Change of variable to simplify the function.
+     Example: $x = \sin t$
+2. **Integration by parts**
+
+   * Formula:
+
+$$
+\int u \, dv = uv - \int v \, du
+$$
+
+3. **Partial fractions**
+
+   * Breaking rational functions into simpler fractions.
+4. **Trigonometric identities**
+
+   * Using trig formulas to simplify integration.
+
+---
+
+## **10. Applications of Integration**
+
+* Finding **area under curves**.
+* Finding **volumes** of solids of revolution.
+* Finding **length of curves**.
+* Calculating **center of mass**.
+* Physics problems: Work, energy, displacement.
+
+---
+
+## **11. Example Problems**
+
+### **Indefinite Example:**
+
+$$
+\int 3x^2 \, dx = x^3 + C
+$$
+
+### **Definite Example:**
+
+$$
+\int_1^3 (2x) \, dx = [x^2]_1^3 = 9 - 1 = 8
+$$
+
+---
+
+## **12. Summary**
+
+* Integration is the process of summing infinitely small parts.
+* It’s the reverse of differentiation.
+* Two main types: **Indefinite** (general function) & **Definite** (specific value).
+* Has wide applications in mathematics, physics, and engineering.
+
+---
+
+If you want, I can **add diagrams** showing:
+
+* How integration adds rectangles under a curve.
+* Difference between definite & indefinite integration.
+
