@@ -1008,4 +1008,212 @@ $$
 ---
 
 
+Alright, here’s your solution rewritten cleanly in the same logical order:
+
+---
+
+We need to evaluate:
+
+$$
+\int_{1}^{4} x f''(x) \, dx
+$$
+
+Given:
+
+$$
+f(1) = 2,\quad f(4) = 7,\quad f'(1) = 5,\quad f'(4) = 3,\quad f''(x) \ \text{is continuous.}
+$$
+
+---
+
+**Step 1: Apply integration by parts**
+Formula:
+
+$$
+\int u \, dv = uv - \int v \, du
+$$
+
+Let:
+
+$$
+u = x \quad\Rightarrow\quad du = dx
+$$
+
+$$
+dv = f''(x) dx \quad\Rightarrow\quad v = f'(x)
+$$
+
+---
+
+**Step 2: Substitution into the formula**
+
+$$
+\int_{1}^{4} x f''(x) \, dx = \left[ x f'(x) \right]_{1}^{4} - \int_{1}^{4} f'(x) \, dx
+$$
+
+---
+
+**Step 3: Evaluate the boundary term**
+
+$$
+\left[ x f'(x) \right]_{1}^{4} = (4 \cdot f'(4)) - (1 \cdot f'(1)) = (4 \cdot 3) - (1 \cdot 5) = 12 - 5 = 7
+$$
+
+---
+
+**Step 4: Evaluate the remaining integral**
+Since $\int f'(x) dx = f(x)$,
+
+$$
+\int_{1}^{4} f'(x) \, dx = f(4) - f(1) = 7 - 2 = 5
+$$
+
+---
+
+**Step 5: Final calculation**
+
+$$
+\int_{1}^{4} x f''(x) \, dx = 7 - 5 = 2
+$$
+
+---
+
+✅ **Final Answer:** $\boxed{2}$
+
+---
+
+Got it — you want to evaluate
+
+$$
+\int_{-\infty}^{0} e^x \sin x \, dx
+$$
+
+---
+
+### Step 1: Recall the standard formula
+
+For $a^x \sin(bx)$ type integrals (or $e^{ax} \sin(bx)$), we have:
+
+$$
+\int e^{ax} \sin(bx) \, dx = \frac{e^{ax}}{a^2 + b^2} \left( a \sin(bx) - b \cos(bx) \right) + C
+$$
+
+Here:
+
+$$
+a = 1,\quad b = 1
+$$
+
+So:
+
+$$
+\int e^x \sin x \, dx = \frac{e^x}{1^2 + 1^2} \left( 1 \sin x - 1 \cos x \right) = \frac{e^x}{2} (\sin x - \cos x) + C
+$$
+
+---
+
+### Step 2: Apply limits from $-\infty$ to $0$
+
+$$
+\int_{-\infty}^{0} e^x \sin x \, dx = \left[ \frac{e^x}{2} (\sin x - \cos x) \right]_{-\infty}^{0}
+$$
+
+* At $x = 0$:
+
+$$
+\frac{e^0}{2} (\sin 0 - \cos 0) = \frac{1}{2} (0 - 1) = -\frac{1}{2}
+$$
+
+* At $x \to -\infty$:
+  Since $e^x \to 0$ as $x \to -\infty$,
+
+$$
+\frac{e^x}{2} (\sin x - \cos x) \to 0
+$$
+
+---
+
+### Step 3: Subtract
+
+$$
+\int_{-\infty}^{0} e^x \sin x \, dx = \left(-\frac12\right) - 0 = -\frac12
+$$
+
+---
+
+✅ **Final Answer:**
+
+$$
+\boxed{-\frac12}
+$$
+
+---
+
+Alright — let's evaluate
+
+$$
+\int_{0}^{\infty} e^{-x} \cos x \, dx
+$$
+
+---
+
+### Step 1: Recall the standard formula
+
+For
+
+$$
+\int e^{ax} \cos(bx) \, dx
+$$
+
+we have:
+
+$$
+\int e^{ax} \cos(bx) \, dx = \frac{e^{ax}}{a^2 + b^2} \left( a \cos(bx) + b \sin(bx) \right) + C
+$$
+
+---
+
+### Step 2: Apply with $a = -1$, $b = 1$
+
+$$
+\int e^{-x} \cos x \, dx = \frac{e^{-x}}{(-1)^2 + (1)^2} \left( -1 \cos x + 1 \sin x \right)
+$$
+
+$$
+= \frac{e^{-x}}{2} \left( -\cos x + \sin x \right) + C
+$$
+
+---
+
+### Step 3: Apply limits $0$ to $\infty$
+
+$$
+\int_{0}^{\infty} e^{-x} \cos x \, dx = \left[ \frac{e^{-x}}{2} \left( -\cos x + \sin x \right) \right]_{0}^{\infty}
+$$
+
+* As $x \to \infty$: $e^{-x} \to 0$, so the term → 0.
+* At $x = 0$:
+
+$$
+\frac{e^{0}}{2} \left( -\cos 0 + \sin 0 \right) = \frac{1}{2}(-1 + 0) = -\frac12
+$$
+
+---
+
+### Step 4: Subtract
+
+$$
+\int_{0}^{\infty} e^{-x} \cos x \, dx = 0 - \left(-\frac12\right) = \frac12
+$$
+
+---
+
+✅ **Final Answer:**
+
+$$
+\boxed{\frac12}
+$$
+
+---
+
 
