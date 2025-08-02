@@ -922,3 +922,90 @@ $$
 
 If you want, I can prepare a **one-page A4 GATE Integration Formula Sheet** with all formulas in a **visually optimized format** so you can revise in 2 minutes before the exam.
 
+Got it — you’re asking how to solve the integral of $10^u \, du$.
+
+---
+
+### Step-by-step:
+
+We know the general formula:
+
+$$
+\int a^x \, dx = \frac{a^x}{\ln a} + C, \quad a > 0, a \neq 1
+$$
+
+Here, $a = 10$ and $x = u$.
+
+---
+
+**Step 1:** Apply the formula
+
+$$
+\int 10^u \, du = \frac{10^u}{\ln 10} + C
+$$
+
+---
+
+✅ **Final answer:**
+
+$$
+\boxed{\frac{10^u}{\ln 10} + C}
+$$
+
+---
+
+You’re asking for $\int \log x \, dx$.
+
+---
+
+**Step 1 — Recall the integration formula**
+Here we use integration by parts:
+
+Let:
+
+$$
+u = \log x \quad\Rightarrow\quad du = \frac{1}{x} dx
+$$
+
+$$
+dv = dx \quad\Rightarrow\quad v = x
+$$
+
+---
+
+**Step 2 — Apply integration by parts formula**
+
+$$
+\int u \, dv = uv - \int v \, du
+$$
+
+Substitute:
+
+$$
+\int \log x \, dx = x \log x - \int x \cdot \frac{1}{x} dx
+$$
+
+$$
+= x \log x - \int 1 \, dx
+$$
+
+---
+
+**Step 3 — Solve**
+
+$$
+= x \log x - x + C
+$$
+
+---
+
+✅ **Final answer:**
+
+$$
+\boxed{\int \log x \, dx = x \log x - x + C}
+$$
+
+---
+
+
+
