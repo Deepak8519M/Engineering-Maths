@@ -427,3 +427,48 @@ That’s the **definition** of an inflection point.
 ---
 
 
+BASIC DEFINITIONS
+
+### **Perimeter**
+
+The **perimeter** of a shape is the **total distance around it**.
+You imagine walking all the way along the outline of the shape — that distance is the perimeter.
+
+---
+
+### 📍 For a rectangle:
+
+The perimeter means **the distance around all four sides**.
+So, if you walk along:
+
+1. One long side
+2. One short side
+3. The other long side
+4. The other short side
+   ...and add up all those distances — you get the perimeter.
+
+---
+
+Okay — let’s keep it simple without formulas.
+
+---
+
+### **Perimeter**
+
+The **perimeter** of a shape is the **total distance around it**.
+You imagine walking all the way along the outline of the shape — that distance is the perimeter.
+
+---
+
+### 📍 For a rectangle:
+
+The perimeter means **the distance around all four sides**.
+So, if you walk along:
+
+1. One long side
+2. One short side
+3. The other long side
+4. The other short side
+   ...and add up all those distances — you get the perimeter.
+
+---
