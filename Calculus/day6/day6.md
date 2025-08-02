@@ -681,3 +681,244 @@ If you want, I can **add diagrams** showing:
 * How integration adds rectangles under a curve.
 * Difference between definite & indefinite integration.
 
+---
+
+Alright ✅
+I’ll give you **GATE-focused Integration e-notes** with:
+
+1. **All important formulas**
+2. **Why we add “+ C” in indefinite integration** (explained clearly so you never forget)
+
+---
+
+# **📚 Integration – GATE Exam Notes**
+
+---
+
+## **1. Why Do We Add “+ C” in Indefinite Integrals?**
+
+When we integrate a function, we are doing the **reverse** of differentiation.
+
+Example:
+
+$$
+\frac{d}{dx}(x^2) = 2x  
+$$
+
+$$
+\frac{d}{dx}(x^2 + 5) = 2x  
+$$
+
+$$
+\frac{d}{dx}(x^2 - 100) = 2x  
+$$
+
+All three have the **same derivative** $2x$.
+
+So when we integrate $2x$, we don’t know whether the original function had **+5**, **-100**, or any other constant — they all vanish when differentiated.
+
+Hence:
+
+$$
+\int 2x \, dx = x^2 + C
+$$
+
+Here **C** = constant of integration, representing all possible constants the original function could have had.
+
+**Key point:**
+
+* **+C** is added in **indefinite integrals only** (not in definite integrals because limits remove constants).
+* If you **forget C**, your answer is **not general**.
+
+---
+
+## **2. Standard Integration Formulas (Most Important for GATE)**
+
+### **A. Power Rule**
+
+$$
+\int x^n \, dx = \frac{x^{n+1}}{n+1} + C \quad (n \neq -1)
+$$
+
+---
+
+### **B. Exponential Functions**
+
+$$
+\int e^x \, dx = e^x + C
+$$
+
+$$
+\int a^x \, dx = \frac{a^x}{\ln a} + C
+$$
+
+---
+
+### **C. Logarithmic Function**
+
+$$
+\int \frac{1}{x} \, dx = \ln|x| + C
+$$
+
+---
+
+### **D. Trigonometric Functions**
+
+$$
+\int \sin x \, dx = -\cos x + C
+$$
+
+$$
+\int \cos x \, dx = \sin x + C
+$$
+
+$$
+\int \sec^2 x \, dx = \tan x + C
+$$
+
+$$
+\int \csc^2 x \, dx = -\cot x + C
+$$
+
+$$
+\int \sec x \tan x \, dx = \sec x + C
+$$
+
+$$
+\int \csc x \cot x \, dx = -\csc x + C
+$$
+
+---
+
+### **E. Inverse Trigonometric Functions**
+
+$$
+\int \frac{1}{\sqrt{1 - x^2}} \, dx = \sin^{-1} x + C
+$$
+
+$$
+\int \frac{-1}{\sqrt{1 - x^2}} \, dx = \cos^{-1} x + C
+$$
+
+$$
+\int \frac{1}{1 + x^2} \, dx = \tan^{-1} x + C
+$$
+
+$$
+\int \frac{-1}{1 + x^2} \, dx = \cot^{-1} x + C
+$$
+
+$$
+\int \frac{1}{x\sqrt{x^2 - 1}} \, dx = \sec^{-1} x + C
+$$
+
+$$
+\int \frac{-1}{x\sqrt{x^2 - 1}} \, dx = \csc^{-1} x + C
+$$
+
+---
+
+### **F. Hyperbolic Functions**
+
+$$
+\int \sinh x \, dx = \cosh x + C
+$$
+
+$$
+\int \cosh x \, dx = \sinh x + C
+$$
+
+$$
+\int \operatorname{sech}^2 x \, dx = \tanh x + C
+$$
+
+$$
+\int \operatorname{csch}^2 x \, dx = -\coth x + C
+$$
+
+---
+
+### **G. Special Integrals**
+
+$$
+\int \frac{1}{\sqrt{a^2 - x^2}} \, dx = \sin^{-1}\left(\frac{x}{a}\right) + C
+$$
+
+$$
+\int \frac{1}{a^2 + x^2} \, dx = \frac{1}{a} \tan^{-1} \left(\frac{x}{a}\right) + C
+$$
+
+$$
+\int \frac{1}{x\sqrt{x^2 - a^2}} \, dx = \frac{1}{a} \sec^{-1} \left| \frac{x}{a} \right| + C
+$$
+
+---
+
+## **3. Properties of Definite Integrals (Very Important for GATE)**
+
+1. **Limit swapping:**
+
+$$
+\int_a^b f(x) \, dx = -\int_b^a f(x) \, dx
+$$
+
+2. **Same limits:**
+
+$$
+\int_a^a f(x) \, dx = 0
+$$
+
+3. **Splitting:**
+
+$$
+\int_a^b f(x) \, dx = \int_a^c f(x) \, dx + \int_c^b f(x) \, dx
+$$
+
+4. **Even/Odd functions:**
+
+* If $f(x)$ is even:
+
+$$
+\int_{-a}^a f(x) \, dx = 2 \int_0^a f(x) \, dx
+$$
+
+* If $f(x)$ is odd:
+
+$$
+\int_{-a}^a f(x) \, dx = 0
+$$
+
+5. **Mean Value Theorem for Integrals:**
+
+$$
+\int_a^b f(x) \, dx = f(c)(b-a), \quad c \in [a, b]
+$$
+
+---
+
+## **4. Common Methods for Solving Integrals in GATE**
+
+1. **Substitution** — Change of variable to simplify.
+2. **Integration by parts** — For products of functions:
+
+$$
+\int u \, dv = uv - \int v \, du
+$$
+
+3. **Partial fractions** — Break rational functions into simpler ones.
+4. **Trigonometric identities** — Simplify before integrating.
+
+---
+
+## **5. Application Areas in GATE**
+
+* **Area under curve**
+* **Work done in physics**
+* **Center of mass, moment of inertia**
+* **Probability (continuous random variables)**
+* **Signal processing (Fourier transforms)**
+
+---
+
+If you want, I can prepare a **one-page A4 GATE Integration Formula Sheet** with all formulas in a **visually optimized format** so you can revise in 2 minutes before the exam.
+
